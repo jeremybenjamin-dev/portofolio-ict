@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya - ICT Developer</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                MyPortfolio<span class="text-indigo-400">.</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-indigo-400 transition-colors">Tentang Saya</a>
+                <a href="#skills" class="text-slate-300 hover:text-indigo-400 transition-colors">Keahlian</a>
+                <a href="#projects" class="text-slate-300 hover:text-indigo-400 transition-colors">Proyek</a>
+                <a href="#contact" class="text-slate-300 hover:text-indigo-400 transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none" aria-label="Buka Menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Tentang Saya</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Keahlian</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Proyek</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-indigo-400 font-medium">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-[85vh] flex items-center justify-center relative overflow-hidden py-20 px-4">
+        <!-- Glow effects Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block px-3 py-1 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase mb-6">
+                Selamat Datang di Portofolio Saya
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                Halo, Saya <span class="bg-gradient-to-r from-indigo-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent">Siswa ICT</span>
+            </h1>
+            <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Antusias dalam pengembangan web modern, pemrosesan data, dan solusi berbasis teknologi. Berkomitmen untuk terus belajar dan menciptakan aplikasi bermanfaat.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/30 transition-all duration-200">
+                    Lihat Proyek Saya
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium rounded-xl transition-all duration-200">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="about" class="py-20 border-t border-slate-800/80 bg-slate-900/50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-bold text-white">Tentang Saya</h2>
+                    <div class="w-12 h-1 bg-indigo-500 rounded-full"></div>
+                    <p class="text-slate-400 leading-relaxed pt-2">
+                        Saya seorang pelajar yang sedang mendalami bidang Teknologi Informasi dan Komunikasi (ICT). Saya memiliki ketertarikan tinggi pada pembuatan website, integrasi basis data, dan pemecahan masalah melalui pemrograman.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Fokus utama saya saat ini adalah menguasai fondasi web development seperti HTML, CSS, JavaScript, serta mengeksplorasi layanan cloud modern seperti Firebase untuk membangun aplikasi web interaktif.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl p-6 sm:p-8 relative">
+                    <h3 class="text-xl font-semibold text-white mb-4">Informasi Singkat</h3>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-graduation-cap text-indigo-400 w-5"></i>
+                            <span><strong>Status:</strong> Pelajar / ICT Member</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-code text-indigo-400 w-5"></i>
+                            <span><strong>Fokus:</strong> Web Development & Database</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-location-dot text-indigo-400 w-5"></i>
+                            <span><strong>Lokasi:</strong> Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian Section -->
+    <section id="skills" class="py-20 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Keahlian & Teknologi</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded-full mx-auto mt-3"></div>
+                <p class="text-slate-400 mt-4">Teknologi yang saya pelajari dan gunakan dalam mengembangkan proyek.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 text-center hover:border-indigo-500/50 transition-all">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <h3 class="font-semibold text-slate-200">HTML5</h3>
+                    <p class="text-xs text-slate-400 mt-1">Struktur Web</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 text-center hover:border-indigo-500/50 transition-all">
+                    <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+                    <h3 class="font-semibold text-slate-200">CSS3 / Tailwind</h3>
+                    <p class="text-xs text-slate-400 mt-1">Desain Responsif</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 text-center hover:border-indigo-500/50 transition-all">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
+                    <h3 class="font-semibold text-slate-200">JavaScript</h3>
+                    <p class="text-xs text-slate-400 mt-1">Interaktivitas</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-5 text-center hover:border-indigo-500/50 transition-all">
+                    <i class="fa-brands fa-github text-4xl text-slate-200 mb-3"></i>
+                    <h3 class="font-semibold text-slate-200">Git & GitHub</h3>
+                    <p class="text-xs text-slate-400 mt-1">Kontrol Versi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="projects" class="py-20 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Proyek Saya</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded-full mx-auto mt-3"></div>
+                <p class="text-slate-400 mt-4">Beberapa hasil karya dan proyek latihan yang sedang/telah dibuat.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyek 1: Portofolio Personal -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl overflow-hidden hover:border-slate-600 transition-all flex flex-col">
+                    <div class="bg-slate-900 p-6 border-b border-slate-700/50 flex justify-between items-center">
+                        <i class="fa-solid fa-laptop-code text-indigo-400 text-2xl"></i>
+                        <span class="px-2.5 py-1 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold rounded-full">
+                            Selesai
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Web Portofolio ICT</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Website portofolio pribadi responsif yang dibuat menggunakan HTML, Tailwind CSS, dan di-host di GitHub Pages.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">HTML</span>
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">Tailwind</span>
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 2: Database Firebase (Tantangan 2 Modul) -->
+                <div class="bg-slate-800/50 border border-indigo-500/40 rounded-2xl overflow-hidden hover:border-indigo-500 transition-all flex flex-col relative group">
+                    <div class="bg-slate-900 p-6 border-b border-slate-700/50 flex justify-between items-center">
+                        <i class="fa-solid fa-database text-amber-400 text-2xl"></i>
+                        <!-- Badge UPCOMING Sesuai instruksi tugas -->
+                        <span class="px-2.5 py-1 bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold rounded-full">
+                            Upcoming
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Database Firebase ICT</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Sistem manajemen basis data cloud interaktif menggunakan Google Firebase (Firestore) untuk menyimpan data secara real-time.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">Firebase</span>
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">Firestore</span>
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Aplikasi Web Masa Depan -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-2xl overflow-hidden hover:border-slate-600 transition-all flex flex-col">
+                    <div class="bg-slate-900 p-6 border-b border-slate-700/50 flex justify-between items-center">
+                        <i class="fa-solid fa-rocket text-cyan-400 text-2xl"></i>
+                        <span class="px-2.5 py-1 bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold rounded-full">
+                            Rencana
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Aplikasi Web Interaktif</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Proyek eksplorasi fitur web dinamis yang menghubungkan API publik dengan antarmuka pengguna yang menarik.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">REST API</span>
+                            <span class="text-xs bg-slate-700/50 text-slate-300 px-2.5 py-1 rounded">JS Fetch</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="contact" class="py-20 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white">Hubungi Saya</h2>
+            <div class="w-12 h-1 bg-indigo-500 rounded-full mx-auto mt-3 mb-6"></div>
+            <p class="text-slate-400 mb-10">Tertarik berdiskusi atau ingin bertanya seputar proyek saya? Silakan kirim pesan!</p>
+
+            <!-- Form Kontak -->
+            <form id="contact-form" class="space-y-4 text-left bg-slate-800/40 p-6 sm:p-8 rounded-2xl border border-slate-700/60">
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Nama</label>
+                    <input type="text" required placeholder="Nama Anda" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Email</label>
+                    <input type="email" required placeholder="email@contoh.com" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-1">Pesan</label>
+                    <textarea rows="4" required placeholder="Tulis pesan Anda di sini..." class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl transition-colors shadow-lg shadow-indigo-600/20">
+                    Kirim Pesan
+                </button>
+            </form>
+            
+            <div id="form-status" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm">
+                Terima kasih! Pesan Anda telah berhasil terkirim.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 bg-slate-950 text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 ICT Portfolio. Dibuat untuk Tugas ICTCodehub.</p>
+            <div class="flex space-x-6 text-lg">
+                <a href="https://github.com" target="_blank" class="hover:text-slate-300 transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interaktif -->
+    <script>
+        // Menu toggle untuk versi mobile
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Tutup mobile menu ketika link diklik
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Penanganan Submit Form Kontak
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formStatus.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
